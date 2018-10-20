@@ -14,13 +14,14 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><font color="white">{{ site.title | default: site.github.repository_name }</font></h1>
         
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p><font color="white">{{ site.description | default: site.github.project_tagline }}
+        </font></p>
 
  
       </header>
@@ -30,7 +31,11 @@
 
       </section>
       <footer>
- 
+        
+        <p><small>Gabriel García Márquez 160
+          <br>Complejo Industrial Chihuahua
+          <br>Chihuahua, Chih. MX 31136
+          <br><a href="mailto:info@tokemsa.com">info@tokemsa.com</a></small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
